@@ -10,7 +10,7 @@ import SwiftUI
 struct OnBoardingView: View {
     var body: some View {
         ZStack {
-            Image(ImageTheme.SplashScreen.rawValue)
+            Image(ImageTheme.splashScreen.rawValue)
                 .resizable()
                 .ignoresSafeArea()
             VStack {
@@ -31,7 +31,7 @@ struct OnBoardingView: View {
     
     private var headerSection : some View {
         VStack {
-            Image(ImageTheme.AppLogo.rawValue)
+            Image(ImageTheme.appLogo.rawValue)
                 .frame(width: 70,height:70)
                 .padding()
             Text(CustomString.OBTextPremiumRecepie)
