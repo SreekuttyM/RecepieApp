@@ -16,15 +16,15 @@ struct OnBoardingView: View {
             VStack {
                 headerSection
                 .padding(.top,30)
-                middleSection
                 Spacer()
+                middleSection
                 Button {
                 
                 } label: {
                     Text(CustomString.OBButtonSTartShopping)
                         .actionToCallButton()
                 }
-                .padding(.bottom,0)
+                .padding(.bottom,50)
             }
         }
     }
@@ -33,20 +33,21 @@ struct OnBoardingView: View {
         VStack {
             Image(ImageTheme.appLogo.rawValue)
                 .frame(width: 70,height:70)
-                .padding()
+                .padding(.bottom,10)
             Text(CustomString.OBTextPremiumRecepie)
                 .centreAligmentMultilineText(font: .customFont(fontType: .bold, size: 15))
         }
     }
     
     private var middleSection : some View {
-        ZStack {
+        VStack {
             Text(CustomString.OBTextGetCooking)
                 .centreAligmentMultilineText(font: .customFont(fontType: .black, size: 50))
+                .padding(.bottom,5)
             Text(CustomString.OBTextSimpleWay)
                 .centreAligmentMultilineText(font: .customFont(fontType: .bold, size: 16))
                 
-        }
+        }.padding(.bottom,50)
     }
 }
 

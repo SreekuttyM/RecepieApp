@@ -21,7 +21,6 @@ extension View {
         self.font(font)
         .foregroundStyle(.white)
         .multilineTextAlignment(.center)
-        .padding()
     }
     
     
