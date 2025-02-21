@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ActionBackgroundButton: View {
-    var title : String
+    var title: String
     var action: () -> Void
     var body: some View {
         Button {
@@ -20,13 +20,13 @@ struct ActionBackgroundButton: View {
                 .foregroundStyle(.white)
                 .background(.accent)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
-            
-        }.padding(.bottom,70)
+
+        }.padding(.bottom, 70)
     }
 }
 
 #Preview {
     ActionBackgroundButton(title: "Start") {
-        
+
     }
 }

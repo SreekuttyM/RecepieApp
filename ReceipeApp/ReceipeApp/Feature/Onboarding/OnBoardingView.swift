@@ -10,20 +10,20 @@ import SwiftUI
 struct OnBoardingView: View {
     var body: some View {
         ZStack {
-            Image(ImageTheme.SplashScreen.rawValue)
+            Image(ImageTheme.splashScreen.rawValue)
                 .resizable()
                 .ignoresSafeArea()
             VStack {
                 VStack {
-                    Image(ImageTheme.AppLogo.rawValue)
-                        .frame(width: 70,height:70)
+                    Image(ImageTheme.appLogo.rawValue)
+                        .frame(width: 70, height: 70)
                         .padding()
                     Text(CustomString.OBTextPremiumRecepie)
                         .font(Font.customFont(fontType: .bold, size: 15))
                         .foregroundStyle(.white)
                 }
-                .padding(.top,30)
-                    
+                .padding(.top, 30)
+
                 Spacer()
                 Text(CustomString.OBTextGetCooking)
                     .font(.customFont(fontType: .black, size: 50))
@@ -34,10 +34,10 @@ struct OnBoardingView: View {
                     .font(.customFont(fontType: .bold, size: 16))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.white)
-                    .padding(.bottom,50)
+                    .padding(.bottom, 50)
                 ActionBackgroundButton(title: CustomString.OBButtonSTartShopping, action: {
-                    
-                }).padding(.bottom,0)
+
+                }).padding(.bottom, 0)
             }
         }
     }

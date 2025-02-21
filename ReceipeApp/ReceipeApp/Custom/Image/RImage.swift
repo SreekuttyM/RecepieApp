@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-enum ImageTheme : String {
-    case SplashScreen = "SplashImage"
-    case AppLogo = "AppLogo"
+enum ImageTheme: String {
+    case splashScreen = "SplashImage"
+    case appLogo = "AppLogo"
 }
