@@ -1,0 +1,34 @@
+//
+//  RFont.swift
+//  ReceipeApp
+//
+//  Created by Sreekutty Maya on 21/02/2025.
+//
+
+import SwiftUI
+
+enum FontWeight {
+    case light
+    case medium
+    case bold
+    case black
+    case Regular
+}
+
+
+extension Font {
+    static  func customFont(fontType: FontWeight,size: CGFloat) -> Font {
+        switch fontType {
+            case .light:
+                Font.custom("Poppins-Light", size: size)
+            case .medium:
+                Font.custom("Poppins-Medium", size: size)
+            case .bold:
+                Font.custom("Poppins-Bold", size: size)
+            case .black:
+                Font.custom("Poppins-Black", size: size)
+            case .Regular:
+                Font.custom("Poppins-Regular", size: size)
+        }
+    }
+}
