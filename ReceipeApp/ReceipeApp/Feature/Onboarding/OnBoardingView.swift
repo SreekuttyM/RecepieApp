@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnBoardingView: View {
+    @EnvironmentObject var appstate: AppState
+
     var body: some View {
         ZStack {
             Image(ImageTheme.splashScreen.rawValue)
@@ -19,7 +21,7 @@ struct OnBoardingView: View {
                 Spacer()
                 middleSection
                 Button {
-                
+                    startShoppingPressed()
                 } label: {
                     Text(CustomString.OBButtonSTartShopping)
                         .actionToCallButton()
@@ -28,6 +30,10 @@ struct OnBoardingView: View {
             }
         }
     }
+    
+    private func startShoppingPressed() {
+        appstate.updateViewState(showTabBarView: true)
+     }
     
     private var headerSection : some View {
         VStack {

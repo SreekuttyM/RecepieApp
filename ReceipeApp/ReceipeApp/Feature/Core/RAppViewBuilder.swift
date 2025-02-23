@@ -19,7 +19,6 @@ struct RAppViewBuilder<TabbarView: View, OnboardingView: View>: View {
             } else {
                 onBoardingView
             }
-
         }
     }
 }
